@@ -1,6 +1,1 @@
-# Add the backports repository
-deb http://deb.debian.org/debian bullseye-backports main
-
-# Install the specific version of SQLite from backports
-sqlite3/bullseye-backports
-libsqlite3-dev/bullseye-backports
+sqlite3
