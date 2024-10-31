@@ -1,1 +1,2 @@
-sqlite3
+sqlite3=3.35.5-1~bpo11+1
+libsqlite3-dev=3.35.5-1~bpo11+1
