@@ -4,6 +4,6 @@ chromadb
 langchain
 PyPDF2
 google-generativeai
-protobuf
+protobuf==3.20.3
 google-ai-generativelanguage
 streamlit
