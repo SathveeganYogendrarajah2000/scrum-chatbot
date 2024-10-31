@@ -1,4 +1,4 @@
-import os
+import streamlit as st
 import google.generativeai as genai
 import numpy as np
 from sentence_transformers import SentenceTransformer
@@ -7,7 +7,7 @@ from chromadb.config import Settings
 
 
 # Configure Google Generative AI API
-genai.configure(api_key=GOOGLE_API_KEY)  # Replace with your actual API key
+genai.configure(api_key=st.secrets("GOOGLE_API_KEY"))  # Replace with your actual API key
 
 generation_config = {
     "temperature": 1,
