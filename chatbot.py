@@ -4,10 +4,15 @@ import numpy as np
 from sentence_transformers import SentenceTransformer
 import chromadb
 from chromadb.config import Settings
+import os
+from dotenv import load_dotenv
 
+# Load environment variables from .env file
+load_dotenv()
 
 # Configure Google Generative AI API
-genai.configure(api_key=st.secrets("GOOGLE_API_KEY"))  # Replace with your actual API key
+# genai.configure(api_key=st.secrets("GOOGLE_API_KEY"))  # Replace with your actual API key
+genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 generation_config = {
     "temperature": 1,
